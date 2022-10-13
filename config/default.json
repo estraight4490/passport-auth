@@ -1,0 +1,12 @@
+{
+  "db_connect_config": {
+    "client": "",
+    "connection": {
+      "host": "",
+      "port": "",
+      "user": "",
+      "password": "",
+      "database": ""
+    }
+  }
+}
