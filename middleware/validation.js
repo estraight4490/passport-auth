@@ -14,14 +14,5 @@ const validate_registration = [
   .matches("[A-Z]").trim().escape(),
 ];
 
-const validate_login = [
-  // Check Email
-  check("email").isEmail()
-  .trim().escape().normalizeEmail(),
-  // Check Password
-  check("password").trim().escape(),
-];
-
 module.exports.validationResult = validationResult;
 module.exports.validate_registration = validate_registration;
-module.exports.validate_login = validate_login;
