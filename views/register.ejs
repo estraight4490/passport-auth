@@ -1,5 +1,11 @@
 <h1>Login</h1>
 
+<% if (messages.registration_errors) { %>
+   <% for(let i=0; i<messages.registration_errors.length; i++) { %>
+    <span><%= messages.registration_errors[i].msg %></span><br>
+   <% } %>
+<% } %>
+
 <form action="/register" method="POST">
     <div>
         <label for="name">Name</label>
